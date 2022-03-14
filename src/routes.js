@@ -5,6 +5,12 @@ const routes = [
           handler: addNoteHandler,
         },
         {
+          method: 'POST',
+          path: '/notes/{id}',
+          handler: () => {},
+        },
+
+        {
           method: 'GET',
           path: '/notes',
           handler: getAllNotesHandler,
